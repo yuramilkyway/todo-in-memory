@@ -1,11 +1,13 @@
 package com.apress.todo.repository;
 
 import com.apress.todo.domain.ToDo;
+import org.springframework.stereotype.Repository;
 
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Repository
 public class ToDoRepository implements CommonRepository<ToDo> {
 
     private Map<String, ToDo> toDos = new HashMap<>();
